@@ -1,0 +1,9 @@
+-- 1
+--select c.firstname, c.lastname, i.invoiceid, i.invoicedate, i.billingcountry from invoice i join customer c on i.customerid = c.customerid where c.country = "Brazil";
+
+--2
+-- select i.invoiceid, e.firstname as empleado_nombre, e.lastname as empleado_apellido from invoice i join customer c on i.customerid = c.customerid join employee e on c.supportrepid = e.employeeid;
+
+
+-- 6
+-- select p.name as playlist, count(pt.trackid) as total_canciones from playlist p left join playlisttrack pt on p.playlistid = pt.playlistid group by p.playlistid, p.name;

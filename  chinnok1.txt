@@ -1,0 +1,39 @@
+--1
+-- select * from customer where country = 'Brazil';
+
+--2
+-- select * from employee where title = "Sales Support Agent";
+
+--3
+-- select t.* from track t join album a on t.albumid = a.albumid join artist art on a.artistid = art.artistid where art.name = 'AC/DC'
+
+-- 5
+--  select firstname, lastname, city, state, country, email from employee where title = 'Sales Support Agent';
+
+--6
+-- select distinct billingcountry from invoice;
+
+--7
+-- select state, count(customerid) as total_clientes from customer where country = "USA" group by state;
+
+--8
+-- select count(*) as cantidad_articulos from invoiceline where invoiceid = 37;
+
+--9
+-- select count(t.trackid) as total_canciones from track t join album a on t.albumid = a.albumid join artist art on a.artistid = art.artistid where art.name = "AC/DC";
+
+--10
+-- select invoiceid, count(invoicelineid) as total_articulos from invoiceline group by invoiceid;
+
+--11
+-- select billingcountry, count(invoiceid) as total_facturas from invoice group by billingcountry;
+
+--12
+-- select count(*) as total_facturas from invoice where invoicedate like '2009%' or invoicedate like '2011%';
+
+--13
+-- select count(*) as total_facturas from invoice where invoicedate between '2009-01-01' and '2011-12-31 23:59:59';
+
+--14
+-- select country, count(customerid) as total_clientes from customer where country in ('Spain', 'Brazil') group by country;
+
